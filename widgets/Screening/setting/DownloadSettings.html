@@ -7,13 +7,13 @@
       <!--Sync-enable feature service option-->
       <div class="esriCTSyncEnableOptionDiv">
         <!--Sync-enable radio button-->
-        <input class="esriCTDownloadRadioButton" name="downloadOption" type="radio" data-dojo-type="jimu/dijit/RadioBtn" value="syncEnable"
+        <input class="esriCTDownloadRadioButton" id="syncEnableOption" name="downloadOption" type="radio" class="jimu-radio-btn" data-dojo-type="dijit/form/RadioButton" value="syncEnable"
           data-dojo-attach-point="syncEnableRadioButton" data-dojo-props="group:'radioButtonDownloadOption'">
+        <label class="esriCTDownloadOptionLabel esriCTDownloadLabel" for="syncEnableOption">
+          ${nls.downloadTab.syncEnableOptionLabel}
+        </label>
         <!--Sync-enable download option label and hint container-->
         <div class="esriCTDownloadLabelDiv">
-          <div class=esriCTDownloadOptionLabel>
-            ${nls.downloadTab.syncEnableOptionLabel}
-          </div>
           <div class="esriCTHint">
             ${nls.downloadTab.syncEnableOptionHint}
             <br>${nls.downloadTab.syncEnableOptionNote}
@@ -26,13 +26,13 @@
       <!--Extract data task geoprocessing service option-->
       <div class="esriCTGPServiceOptionDiv">
         <!--Extract data task radio button-->
-        <input class="esriCTDownloadRadioButton" name="downloadOption" type="radio" data-dojo-type="jimu/dijit/RadioBtn" value="extractDataTask"
+        <input class="esriCTDownloadRadioButton" id="gpServiceOption" name="downloadOption" type="radio" class="jimu-radio-btn" data-dojo-type="dijit/form/RadioButton" value="extractDataTask"
           data-dojo-attach-point="gpServiceRadioButton" data-dojo-props="group:'radioButtonDownloadOption'">
         <!--Extract data task download option label and hint container-->
+        <label class="esriCTDownloadOptionLabel esriCTDownloadLabel" for="gpServiceOption">
+          ${nls.downloadTab.extractDataTaskOptionLabel}
+        </label>
         <div class="esriCTDownloadLabelDiv">
-          <div class=esriCTDownloadOptionLabel>
-            ${nls.downloadTab.extractDataTaskOptionLabel}
-          </div>
           <div class="esriCTHint">
             ${nls.downloadTab.extractDataTaskOptionHint}
           </div>
@@ -56,14 +56,12 @@
       <!--User cannot download-->
       <div class="esriCTCannotDownloadOptionDiv">
         <!--User cannot download radio button-->
-        <input class="esriCTDownloadRadioButton" name="downloadOption" type="radio" data-dojo-type="jimu/dijit/RadioBtn" value="cannotDownload"
+        <input class="esriCTDownloadRadioButton" id="cannotDownloadOption" name="downloadOption" type="radio" class="jimu-radio-btn" data-dojo-type="dijit/form/RadioButton" value="cannotDownload"
           data-dojo-attach-point="cannotDownloadRadioButton" data-dojo-props="group:'radioButtonDownloadOption'">
         <!--User cannot download option label div-->
-        <div class="esriCTDownloadLabelDiv">
-          <div class=esriCTDownloadOptionLabel>
-            ${nls.downloadTab.cannotDownloadOptionLabel}
-          </div>
-        </div>
+        <label class="esriCTDownloadOptionLabel esriCTDownloadLabel" for="cannotDownloadOption">
+          ${nls.downloadTab.cannotDownloadOptionLabel}
+        </label>
       </div>
     </form>
   </fieldset>

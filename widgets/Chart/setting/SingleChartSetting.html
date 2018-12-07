@@ -93,9 +93,8 @@
 				  	</td>
 				  	<td>
 				  		<div style="position:relative;overflow:hidden;width:100%;height:30px;">
-				  			<select data-dojo-attach-point="categoryFieldSelect" data-dojo-type="dijit/form/Select" style="width:485px;height:100%;">
+				  			<select data-dojo-attach-point="categoryFieldSelect" data-dojo-type="dijit/form/Select" style="width:100%;height:100%;">
 				  			</select>
-				  			<div class="sort-icon" title="${nls.sortOrder}" data-dojo-attach-point="categorySortOrderIcon"></div>
 				  		</div>
 				  	</td>
 				 </tr>
@@ -117,9 +116,8 @@
 				 	</td>
 				 	<td>
 				 		<div style="position:relative;overflow:hidden;width:100%;height:30px;">
-				  			<select data-dojo-attach-point="featureAxisLabelSelect" data-dojo-type="dijit/form/Select" style="width:485px;height:100%;">
+				  			<select data-dojo-attach-point="featureAxisLabelSelect" data-dojo-type="dijit/form/Select" style="width:100%;height:100%;">
 				  			</select>
-				  			<div class="sort-icon" title="${nls.sortOrder}" data-dojo-attach-point="featureSortOrderIcon"></div>
 				  		</div>
 				 	</td>
 				 </tr>
@@ -154,39 +152,42 @@
 				  	</td>
 				 </tr>
 
-				 <tr class="detail-tr feature-tr category-tr count-tr field-tr chart-types-tr">
+				 <tr style="margin-top: 5px;" class="detail-tr feature-tr category-tr count-tr field-tr chart-types-tr">
 				  	<td></td>
-				  	<td class="text-middle">
-				  		<span title="${nls.chartType}">${nls.chartType}</span>
+				  	<td class="mul-td-label" style="line-height: normal;height: auto;">
+				  		<div class="part-label" title="${nls.chartType}">${nls.chartType}</div>
 				  	</td>
-				  	<td class="charts-td">
-				  		<div class="jimu-trailing-margin1">
-				  			<input type="checkbox" data-dojo-attach-point="columnCbx" />
-				  			<label data-dojo-attach-point="columnLabel">${nls.column}</label>
-				  			<div class="edit-div" data-dojo-attach-point="columnEdit"></div>
+				  	<td class="charts-td" style="line-height: 17px;">
+				  		<div class="cbx-tr">
+				  			<div class="cbx-td">
+				  				<div data-dojo-type="jimu/dijit/CheckBox" data-dojo-attach-point="columnCbx"></div>
+				  				<div class="edit-div" data-dojo-attach-point="columnEdit"></div>
+				  			</div>
+				  			<div class="cbx-td">
+				  				<div data-dojo-type="jimu/dijit/CheckBox" data-dojo-attach-point="pieCbx"></div>
+				  				<div class="edit-div" data-dojo-attach-point="pieEdit"></div>
+				  			</div>
 				  		</div>
 
-				  		<div class="jimu-trailing-margin1">
-				  			<input type="checkbox" data-dojo-attach-point="pieCbx" />
-				  			<label data-dojo-attach-point="pieLabel">${nls.pie}</label>
-				  			<div class="edit-div" data-dojo-attach-point="pieEdit"></div>
-				  		</div>
-
-				  		<div class="jimu-trailing-margin1">
-				  			<input type="checkbox" data-dojo-attach-point="barCbx" />
-				  			<label data-dojo-attach-point="barLabel">${nls.bar}</label>
-				  			<div class="edit-div" data-dojo-attach-point="barEdit"></div>
-				  		</div>
-
-				  		<div>
-				  			<input type="checkbox" data-dojo-attach-point="lineCbx" />
-				  			<label data-dojo-attach-point="lineLabel">${nls.line}</label>
-				  			<div class="edit-div" data-dojo-attach-point="lineEdit"></div>
+				  		<div class="cbx-tr">
+							<div class="cbx-td">
+					  			<div data-dojo-type="jimu/dijit/CheckBox" data-dojo-attach-point="barCbx"></div>
+					  			<div class="edit-div" data-dojo-attach-point="barEdit"></div>
+					  		</div>
+					  		<div class="cbx-td">
+				  				<div data-dojo-type="jimu/dijit/CheckBox" data-dojo-attach-point="lineCbx"></div>
+				  				<div class="edit-div" data-dojo-attach-point="lineEdit"></div>
+				  			</div>				  			
 				  		</div>
 				  	</td>
 				 </tr>
 			  </tbody>
 			</table>
+
+			<div class="part-sort">
+				<div class="part-label" title="${nls.sortBy}">${nls.sortBy}</div>
+				<div data-dojo-attach-point="SortDiv" class="part-content"></div>
+			</div>
 
 
 			<!--symbol setting-->

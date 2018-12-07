@@ -1,12 +1,12 @@
 <div>
   <div data-dojo-attach-point="modeSelection" style="display:none">
     <div class="field">
-      <input name="rasterDataMode" type="radio" data-dojo-attach-point="urlMode"
-        data-dojo-attach-event="onclick: _onUrlModeSelect" style="font-size: 10px;"
-        class="jimu-leading-margin10 jimu-radio-btn"><label style="width: auto;" class="jimu-leading-margin025">${nls.useUrlForGPInput}</label>
-      <input name="rasterDataMode" type="radio" data-dojo-attach-point="itemMode"
-        style="font-size: 10px;" data-dojo-attach-event="onclick: _onItemModeSelect"
-        class="jimu-leading-margin2 jimu-radio-btn"><label style=" width: auto;" class="jimu-leading-margin025">${nls.useUploadForGPInput}</label>
+      <input id="gpRasterModeURL" name="rasterDataMode" data-dojo-type="dijit/form/RadioButton" data-dojo-attach-point="urlMode"
+        style="font-size: 10px;" class="jimu-leading-margin10">
+      <label for="gpRasterModeURL" style="width: auto;" class="jimu-leading-margin025">${nls.useUrlForGPInput}</label>
+      <input id="gpRasterModeItem" name="rasterDataMode" data-dojo-type="dijit/form/RadioButton" data-dojo-attach-point="itemMode"
+        style="font-size: 10px;" class="jimu-leading-margin2">
+      <label for="gpRasterModeItem" style=" width: auto;" class="jimu-leading-margin025">${nls.useUploadForGPInput}</label>
     </div>
   </div>
   <div>

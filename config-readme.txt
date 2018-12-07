@@ -75,6 +75,9 @@
   "title": "ArcGIS Web Application",
   "subtitle": "A configurable web application",
 
+  //Optional. If true, the current map extent and the layer visibility will be kept before you leave the app so you can see the same map extent and layer visibility when open the app next time.
+  "keepAppState": true,
+
   //Optional. App can contain some links.
   "links":[
     {

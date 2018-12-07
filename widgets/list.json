@@ -57,7 +57,9 @@
     "Stream",
     "Summary",
     "Swipe",
+    "ThreatAnalysis",
     "TimeSlider",
+    "Visibility",
     "ZoomSlider"
   ],
   "_buildInfo": {

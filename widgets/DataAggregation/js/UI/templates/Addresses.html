@@ -19,10 +19,12 @@
               <tr class="task-row task-instruction-row" data-dojo-attach-event="onClick:_rdoSingleAddressClick" data-dojo-attach-point="singleRadioRow">
                 <td colspan="2" class="pad-left-10 field-control-td">
                   <input name="addr" data-dojo-type="dijit/form/RadioButton"
+                         class="jimu-radio-btn"
+                         id="rdo-single"
+                         type="radio"
                          data-dojo-attach-point="rdoSingleAddress"
-                         data-dojo-attach-event="onChange:_rdoSingleAddressChanged"
                          title="${nls.address.singleField}" />
-                  <div class="main-text">${nls.address.singleField}</div>
+                  <label class="main-text" for="rdo-single">${nls.address.singleField}</label>
                 </td>
               </tr>
               <tr class="bottom-border-bold sub-task-hint panel-title-hint" data-dojo-attach-point="singleSubTaskHintTr">
@@ -54,10 +56,12 @@
               <tr class="task-row task-instruction-row" data-dojo-attach-event="onClick:_rdoMultiAddressClick" data-dojo-attach-point="multiRadioRow">
                 <td colspan="2" class="pad-left-10 field-control-td">
                   <input name="addr" data-dojo-type="dijit/form/RadioButton"
+                         class="jimu-radio-btn"
+                         id="rdo-multi"
+                         type="radio"
                          data-dojo-attach-point="rdoMultiAddress"
-                         data-dojo-attach-event="onChange:_rdoMultiAddressChanged"
                          title="${nls.address.multiField}" />
-                  <div class="main-text">${nls.address.multiField}</div>
+                  <label class="main-text" for="rdo-multi">${nls.address.multiField}</label>
                 </td>
               </tr>
               <tr class="bottom-border sub-task-hint panel-title-hint">

@@ -14,5 +14,10 @@
     "directionsLanguage": "",
     "directionsLengthUnits": "esriKilometers",
     "impedanceAttribute": ""
+  },
+  "barrierLayers": {
+    "pointLayers": [],
+    "polylineLayers": [],
+    "polygonLayers": []
   }
 }

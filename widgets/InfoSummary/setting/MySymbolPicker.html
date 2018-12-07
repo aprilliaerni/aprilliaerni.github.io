@@ -12,25 +12,26 @@
                data-dojo-attach-point="grpSymbolOptions">
             <div data-dojo-attach-point="div_rdoLayerSym" class="height30">
               <input name="a" data-dojo-type="dijit/form/RadioButton"
+                     class="jimu-radio-btn"
                      data-dojo-attach-point="rdoLayerSym"
-                     data-dojo-attach-event="onChange:_rdoLayerSymChanged"
-                     title="${nls.rdoLayer}" />
-              <span class="label">${nls.rdoLayer}</span>
+                     title="${nls.rdoLayer}"
+                     id="rdo-layer"/>
+              <label class="label" for="rdo-layer">${nls.rdoLayer}</label>
             </div>
           </div>
-          <div class="jimu-r-row symPick marginLR20" data-dojo-attach-point="layerSym"> </div>
+          <div class="jimu-r-row symPick marginLR20 layer-sym-container" data-dojo-attach-point="layerSym"> </div>
           <div class="jimu-r-row padTop10" data-dojo-attach-point="grpSymbolOptions">
             <div data-dojo-attach-point="div_rdoEsriSym" class="height30">
-              <input name="a" data-dojo-type="dijit/form/RadioButton" data-dojo-attach-point="rdoEsriSym" data-dojo-attach-event="onChange:_rdoEsriSymChanged" title="${nls.rdoEsri}" />
-              <span class="label">${nls.rdoEsri}</span>
+              <input name="a" id="rdo-esri" data-dojo-type="dijit/form/RadioButton" class="jimu-radio-btn" data-dojo-attach-point="rdoEsriSym" title="${nls.rdoEsri}" />
+              <label class="label" for="rdo-esri">${nls.rdoEsri}</label>
             </div>
           </div>
           <div data-dojo-attach-point="symbolPicker" data-dojo-type="jimu/dijit/SymbolPicker" class="jimu-r-row symPick marginLR20"></div>
           <div data-dojo-attach-point="parent_div_uploadCustomSymbol">
             <div class="jimu-r-row padTop10" data-dojo-attach-point="grpSymbolOptions">
               <div data-dojo-attach-point="div_rdoCustomSym" class="rdoCustomSym">
-                <input name="a" data-dojo-type="dijit/form/RadioButton" data-dojo-attach-point="rdoCustomSym" data-dojo-attach-event="onChange:_rdoCustomSymChanged" title="${nls.rdoCustom}" />
-                <span class="label">${nls.rdoCustom}</span>
+                <input name="a" id="rdo-custom" data-dojo-type="dijit/form/RadioButton" class="jimu-radio-btn" data-dojo-attach-point="rdoCustomSym" title="${nls.rdoCustom}" />
+                <label class="label" for="rdo-custom">${nls.rdoCustom}</label>
               </div>
             </div>
             <div data-dojo-attach-point="customSymbolDIV" class="jimu-r-row padTop10 sHeight marginLR20">
@@ -44,8 +45,6 @@
             <hr class="w" />
             <div class="jimu-r-row padTop10" data-dojo-attach-point="grpClusterOptions">
               <div data-dojo-attach-point="div_chkCluster" class="padTop20">
-                <input data-dojo-type="dijit/form/CheckBox" data-dojo-attach-point="chkClusterSym" title="${nls.chkCluster}" data-dojo-attach-event="onChange:_chkClusterChanged" />
-                <span class="label">${nls.chkCluster}</span>
               </div>
             </div>
 
@@ -55,8 +54,7 @@
             </div>
 
             <div class="jimu-r-row grpClusterOptions marginLR22" data-dojo-attach-point="grpClusterOptions">
-              <input data-dojo-type="dijit/form/CheckBox" data-dojo-attach-point="chkClusterCnt" title="${nls.displayClusterCnt}" data-dojo-attach-event="onChange:_chkClusterCntChanged" />
-              <span class="label">${nls.displayClusterCnt}</span>
+              <div data-dojo-attach-point="div_chkGroupCluster"></div>
             </div>
             <div class="jimu-r-row grpClusterOptions" data-dojo-attach-point="featureFont" style="display: none; margin-left: 45px; margin-right: 45px;">
               <div class="jimu-float-leading">${nls.defineClusterFont}:</div>
@@ -73,15 +71,15 @@
           <!--Main Panel and cluster center Icon Options-->
           <div class="jimu-r-row padTop10" data-dojo-attach-point="grpIconOptions">
             <div data-dojo-attach-point="div_rdoLayerIcon">
-              <input name="b" data-dojo-type="dijit/form/RadioButton" data-dojo-attach-point="rdoLayerIcon" data-dojo-attach-event="onChange:_rdoLayerIconChanged" title="${nls.rdoLayerIcon}" />
-              <span class="label" data-dojo-attach-point="rdoLayerIconLabel">${nls.rdoLayerIcon}</span>
+              <input name="b" id="rdo-layer-icon" data-dojo-type="dijit/form/RadioButton" class="jimu-radio-btn" data-dojo-attach-point="rdoLayerIcon" title="${nls.rdoLayerIcon}" />
+              <label class="label" for="rdo-layer-icon" data-dojo-attach-point="rdoLayerIconLabel">${nls.rdoLayerIcon}</label>
             </div>
           </div>
 
           <div class="jimu-r-row padTop10" data-dojo-attach-point="grpCustomIconOptions">
             <div class="rdoCustomSym" data-dojo-attach-point="div_rdoCustomIcon">
-              <input name="b" data-dojo-type="dijit/form/RadioButton" data-dojo-attach-point="rdoCustomIcon" data-dojo-attach-event="onChange:_rdoCustomIconChanged" title="${nls.rdoCustomIcon}" />
-              <span class="label" data-dojo-attach-point="rdoCustomIconLabel">${nls.rdoCustomIcon}</span>
+              <input name="b" id="rdo-custom-icon" data-dojo-type="dijit/form/RadioButton" class="jimu-radio-btn" data-dojo-attach-point="rdoCustomIcon" title="${nls.rdoCustomIcon}" />
+              <label class="label" for="rdo-custom-icon" data-dojo-attach-point="rdoCustomIconLabel">${nls.rdoCustomIcon}</label>
             </div>
           </div>
           <div class="jimu-r-row padTop10 sHeight marginLR30">
@@ -107,14 +105,12 @@
       <hr />
       <div data-dojo-attach-point="groupOptions" class="groupOptions">
         <div data-dojo-attach-point="div_chkGroup">
-          <input data-dojo-type="dijit/form/CheckBox" data-dojo-attach-point="chkGroup" title="${nls.chkGroup}" data-dojo-attach-event="onChange:_chkGroupChanged" />
-          <span class="label" data-dojo-attach-point="chkGroupLabel">${nls.chkGroup}</span>
         </div>
         <div data-dojo-attach-point="groupByOptions" class="groupByOptions">
           <div class="jimu-r-row padTop10" data-dojo-attach-point="grpField">
             <div class="rdoGroupField" data-dojo-attach-point="div_rdoGroupField">
-              <input name="c" data-dojo-type="dijit/form/RadioButton" data-dojo-attach-point="rdoGroupField" data-dojo-attach-event="onChange:_rdoGroupByFieldChanged" title="${nls.rdoGroupByField}" />
-              <span class="label" data-dojo-attach-point="rdoGroupFieldLabel">${nls.rdoGroupByField}</span>
+              <input name="c" id="rdo-group-field" data-dojo-type="dijit/form/RadioButton" class="jimu-radio-btn" data-dojo-attach-point="rdoGroupField" title="${nls.rdoGroupByField}" />
+              <label class="label" for="rdo-group-field" data-dojo-attach-point="rdoGroupFieldLabel">${nls.rdoGroupByField}</label>
             </div>
             <div data-dojo-attach-point="groupFieldOptions" class="groupFieldOptions">
             </div>
@@ -122,8 +118,8 @@
 
           <div class="jimu-r-row padTop10" data-dojo-attach-point="grpRenderer">
             <div class="rdoGroupField" data-dojo-attach-point="div_rdoGroupRenderer">
-              <input name="c" data-dojo-type="dijit/form/RadioButton" data-dojo-attach-point="rdoGroupRenderer" data-dojo-attach-event="onChange:_rdoGroupByRendererChanged" title="${nls.rdoGroupByRenderer}" />
-              <span class="label" data-dojo-attach-point="rdoGroupRendererLabel">${nls.rdoGroupByRenderer}</span>
+              <input name="c" id="rdo-group-render" data-dojo-type="dijit/form/RadioButton" class="jimu-radio-btn" data-dojo-attach-point="rdoGroupRenderer" title="${nls.rdoGroupByRenderer}" />
+              <label class="label" for="rdo-group-render" data-dojo-attach-point="rdoGroupRendererLabel">${nls.rdoGroupByRenderer}</label>
             </div>
           </div>
         </div>

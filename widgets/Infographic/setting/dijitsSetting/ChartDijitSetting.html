@@ -139,6 +139,10 @@
         <div>${nls.labelSize}</div>
         <div data-dojo-attach-point="horTextSize"></div>
       </div>
+      <div data-dojo-attach-point="hAxisKeepIntScaleRow" class="average-align">
+        <div class="left-label textOverFlow" title="${nls.intScaleText}">${nls.intScaleText}</div>
+        <div class="flex-keep-auto" data-dojo-type="widgets/Infographic/setting/dijitsSetting/_dijits/Toggle" data-dojo-attach-event="change:onHAxisKeepIntScaleChanged" data-dojo-attach-point="hAxisKeepIntScale"></div>
+      </div>
     </div>
 
     <div data-dojo-attach-point="verTogglePocketContent">
@@ -158,6 +162,10 @@
       <div class="average-align">
         <div>${nls.labelSize}</div>
         <div data-dojo-attach-point="verTextSize"></div>
+      </div>
+      <div data-dojo-attach-point="vAxisKeepIntScaleRow" class="average-align">
+        <div class="left-label textOverFlow" title="${nls.intScaleText}">${nls.intScaleText}</div>
+        <div class="flex-keep-auto" data-dojo-type="widgets/Infographic/setting/dijitsSetting/_dijits/Toggle" data-dojo-attach-event="change:onVAxisKeepIntScaleChanged" data-dojo-attach-point="vAxisKeepIntScale"></div>
       </div>
     </div>
 

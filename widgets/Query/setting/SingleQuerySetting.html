@@ -82,15 +82,17 @@
 			<div data-dojo-attach-point="symbolSection" class="symbol-section" style="margin-top:14px;">
 				<div class="stress" style="margin-bottom:15px;">${nls.symbol}</div>
 				<div style="margin-top:5px;">
-					<div class="radio-label-container">
-						<input type="radio" data-dojo-attach-point="radioServiceSymbol" class="jimu-radio-btn"/>
-						<label data-dojo-attach-point="labelServiceSymbol">${nls.serviceSymbolTip}</label>
-					</div>
-					<div class="radio-label-container" style="margin-top:8px;">
-						<input type="radio" data-dojo-attach-point="radioCustomSymbol" checked class="jimu-radio-btn"/>
-						<label data-dojo-attach-point="labelCustomSymbol">${nls.setSymbol}</label>
-						<div data-dojo-attach-point="layerSymbolPicker" data-dojo-type="jimu/dijit/SymbolPicker"></div>
-					</div>
+					<fieldset id="symbolRadioGroup">
+						<div class="radio-label-container">
+							<input data-dojo-type="dijit/form/RadioButton" data-dojo-attach-point="radioServiceSymbol" class="jimu-radio-btn" name="symbolRadioGroup" />
+							<label for="radioServiceSymbol" data-dojo-attach-point="labelServiceSymbol">${nls.serviceSymbolTip}</label>
+						</div>
+						<div class="radio-label-container" style="margin-top:8px;">
+							<input data-dojo-type="dijit/form/RadioButton" data-dojo-attach-point="radioCustomSymbol" checked class="jimu-radio-btn" name="symbolRadioGroup"/>
+							<label for="radioCustomSymbol" data-dojo-attach-point="labelCustomSymbol">${nls.setSymbol}</label>
+							<div data-dojo-attach-point="layerSymbolPicker" data-dojo-type="jimu/dijit/SymbolPicker"></div>
+						</div>
+					</fieldset>
 					<div data-dojo-type="jimu/dijit/CheckBox" class="small-font-size" data-dojo-attach-point="cbxModifySymbol" style="margin-top:8px;"></div>
 				</div>
 			</div>
@@ -99,17 +101,22 @@
 		<div data-dojo-attach-point="optionsTabNode">
 			<div data-dojo-attach-point="cbxKeepResultsDiv" style="display:none;"></div>
 			<div class="export-section" data-dojo-attach-point="exportSection"></div>
+			<div style="margin-top: 5px;" data-dojo-attach-point="expandSection"></div>
 			<div class="create-layer-section">
 				<div class="stress">${nls.createLayerForTaskTip}</div>
 				<div style="margin-top:15px;">
-					<div class="radio-label-container">
-						<input data-dojo-attach-point="radioOneLayerPerTask" type="radio" checked class="jimu-radio-btn"/>
-						<label data-dojo-attach-point="labelOneLayerPerTask">${nls.oneLayerForTaskTip}</label>
-					</div>
-					<div class="radio-label-container" style="margin-top:15px;">
-						<input data-dojo-attach-point="radioMultipleLayerPerTask" type="radio" class="jimu-radio-btn"/>
-						<label data-dojo-attach-point="labelMultipleLayerPerTask">${nls.multipleLayerForTaskTip}</label>
-					</div>
+					<fieldset id="resLayerRadioGroup">
+					
+						<div class="radio-label-container">
+							<input name="resLayerRadioGroup" data-dojo-type="dijit/form/RadioButton" data-dojo-attach-point="radioOneLayerPerTask" checked class="jimu-radio-btn"/>
+							<label for="radioOneLayerPerTask" data-dojo-attach-point="labelOneLayerPerTask">${nls.oneLayerForTaskTip}</label>
+						</div>
+						<div class="radio-label-container" style="margin-top:15px;">
+							<input name="resLayerRadioGroup" data-dojo-type="dijit/form/RadioButton" data-dojo-attach-point="radioMultipleLayerPerTask" class="jimu-radio-btn"/>
+							<label for="radioMultipleLayerPerTask" data-dojo-attach-point="labelMultipleLayerPerTask">${nls.multipleLayerForTaskTip}</label>
+						</div>
+
+					</fieldset>
 				</div>
 			</div>
 		</div>

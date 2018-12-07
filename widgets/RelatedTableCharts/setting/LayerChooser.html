@@ -27,11 +27,11 @@
     </div>
     <div data-dojo-attach-point="buttonsDiv" class="buttonsDiv">
         <div class="button-container button-container-absolute" style="padding: 0px;">
-            <div class="jimu-btn jimu-float-trailing jimu-leading-margin1" data-dojo-attach-point="cancelButton">
-                ${nls.cancel}</div>
             <div class="jimu-btn jimu-float-trailing jimu-leading-margin1 jimu-state-disabled"
-                data-dojo-attach-point="okButton">
+                data-dojo-attach-point="okButton" tabindex="0">
                 ${nls.ok}</div>
+            <div class="jimu-btn jimu-float-trailing jimu-leading-margin1" data-dojo-attach-point="cancelButton" tabindex="0">
+                ${nls.cancel}</div>
         </div>
     </div>
 </div>

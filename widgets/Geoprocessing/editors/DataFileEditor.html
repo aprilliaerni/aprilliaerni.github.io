@@ -1,13 +1,13 @@
 <div>
   <div data-dojo-attach-point="modeSelection" style="display:none">
     <div class="field">
-      <input name="dataFileMode" type="radio" class="jimu-radio-btn" data-dojo-attach-point="urlMode"
-        data-dojo-attach-event="onclick: _onUrlModeSelect" style="font-size: 12px;">
-        <label style="width: auto;" class="jimu-leading-margin05">${nls.useUrlForGPInput}</label>
-      <input name="dataFileMode" type="radio" data-dojo-attach-point="itemMode"
-        style="font-size: 12px;" data-dojo-attach-event="onclick: _onItemModeSelect"
-        class="jimu-leading-margin35 jimu-radio-btn"><label style=" width: auto;"
-        class="jimu-leading-margin05">${nls.useUploadForGPInput}</label>
+      <input name="dataFileMode" data-dojo-type="dijit/form/RadioButton" data-dojo-attach-point="urlMode"
+        style="font-size: 12px;" id="gpSettingFileUrl">
+        <label style="width: auto;" for="gpSettingFileUrl" class="jimu-leading-margin05">${nls.useUrlForGPInput}</label>
+      <input name="dataFileMode" data-dojo-type="dijit/form/RadioButton" data-dojo-attach-point="itemMode"
+        style="font-size: 12px;" class="jimu-leading-margin35" id="gpSettingFileItem">
+      <label style="width: auto;"
+        class="jimu-leading-margin05" for="gpSettingFileItem">${nls.useUploadForGPInput}</label>
     </div>
   </div>
   <div>

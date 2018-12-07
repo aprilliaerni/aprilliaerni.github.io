@@ -1,8 +1,15 @@
 <div>
   <div class="features-result" data-dojo-attach-point="featuresResultDiv">
     <div class="results-number" data-dojo-attach-point="resultsNumberDiv">
-      <span>${nls.numberFound}: </span>
-      <span data-dojo-attach-point="numSpan"></span>
+      <div class="number-container">
+        <div>${nls.displayedFeatures}:</div>
+        <span data-dojo-attach-point="numSpan"></span>
+      </div>
+      <div class="action-container">
+        <div data-dojo-attach-point="loadMoreIcon" class="icon load-more-button query-hidden" title="${nls.loadMore}" data-dojo-attach-event="onclick:_onLoadMoreClicked"></div>
+        <div data-dojo-attach-point="expandedListIcon" class="icon expand-list" data-dojo-attach-event="onclick:_onExpandClicked"></div>
+      </div>
+      
     </div>
     <div class="popup-menu-button query-result-action-button" data-dojo-attach-point="btnFeatureAction" data-dojo-attach-event="click:_onBtnMenuClicked"></div>
     <div class="results-container" data-dojo-attach-point="resultsContainer" data-dojo-attach-event="onscroll:_onResultsScroll" onselectstart="return false;">

@@ -14,10 +14,12 @@
       <tr class="task-row task-instruction-row" data-dojo-attach-event="onClick:_rdoAddressClick">
         <td class="field-control-td pad-left-10">
           <input name="lt" data-dojo-type="dijit/form/RadioButton"
+                 class="jimu-radio-btn"
+                 id="rdo-address"
+                 type="radio"
                  data-dojo-attach-point="rdoAddress"
-                 data-dojo-attach-event="onChange:_rdoAddressChanged"
                  title="${nls.locationMapping.useAddress}" />
-          <div class="main-text">${nls.locationMapping.useAddress}</div>
+          <label class="main-text" for="rdo-address">${nls.locationMapping.useAddress}</label>
         </td>
       </tr>
       <tr class="bottom-border task-instruction-row">
@@ -28,10 +30,12 @@
       <tr class="task-instruction-row task-row" data-dojo-attach-event="onClick:_rdoCoordinateClick">
         <td class="field-control-td pad-left-10">
           <input name="lt" data-dojo-type="dijit/form/RadioButton"
+                 class="jimu-radio-btn"
+                 id="rdo-coordinate"
+                 type="radio"
                  data-dojo-attach-point="rdoCoordinates"
-                 data-dojo-attach-event="onChange:_rdoCoordinateChanged"
                  title="${nls.locationMapping.useCoordinates}" />
-          <div class="main-text">${nls.locationMapping.useCoordinates}</div>
+          <label class="main-text" for="rdo-coordinate">${nls.locationMapping.useCoordinates}</label>
         </td>
       </tr>
       <tr class="bottom-border task-instruction-row">

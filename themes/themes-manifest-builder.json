@@ -64,8 +64,8 @@
         "description": "this is layout3"
       }
     ],
-    "version": "2.10",
-    "wabVersion": "2.10",
+    "version": "2.11",
+    "wabVersion": "2.11",
     "author": "Esri R&D Center Beijing",
     "description": "",
     "copyright": "",
@@ -230,8 +230,8 @@
         "description": "Theme widget controller"
       }
     ],
-    "version": "2.10",
-    "wabVersion": "2.10",
+    "version": "2.11",
+    "wabVersion": "2.11",
     "author": "@SpatialAgent",
     "description": "",
     "copyright": "",
@@ -429,8 +429,8 @@
         "description": "Widget controller"
       }
     ],
-    "version": "2.10",
-    "wabVersion": "2.10",
+    "version": "2.11",
+    "wabVersion": "2.11",
     "author": "@SpatialAgent",
     "description": "",
     "copyright": "",
@@ -604,8 +604,8 @@
         "description": "this is theme widget controller"
       }
     ],
-    "version": "2.10",
-    "wabVersion": "2.10",
+    "version": "2.11",
+    "wabVersion": "2.11",
     "author": "Esri R&D Center Beijing",
     "description": "",
     "copyright": "",
@@ -783,8 +783,8 @@
         "description": "this is the third layout"
       }
     ],
-    "version": "2.10",
-    "wabVersion": "2.10",
+    "version": "2.11",
+    "wabVersion": "2.11",
     "author": "Esri R&D Center Beijing",
     "description": "",
     "copyright": "",
@@ -908,8 +908,8 @@
         "description": "this is an alternative layout"
       }
     ],
-    "version": "2.10",
-    "wabVersion": "2.10",
+    "version": "2.11",
+    "wabVersion": "2.11",
     "author": "Esri R&D Center Beijing",
     "description": "",
     "copyright": "",
@@ -1078,8 +1078,8 @@
         "description": "this is theme widget controller"
       }
     ],
-    "version": "2.10",
-    "wabVersion": "2.10",
+    "version": "2.11",
+    "wabVersion": "2.11",
     "author": "Esri R&D Center Beijing",
     "description": "",
     "copyright": "",
@@ -1282,8 +1282,8 @@
         "description": "this is theme widget controller"
       }
     ],
-    "version": "2.10",
-    "wabVersion": "2.10",
+    "version": "2.11",
+    "wabVersion": "2.11",
     "author": "Esri Inc",
     "description": "PlateauTheme",
     "copyright": "Copyright 2015 Esri Inc.",
@@ -1493,8 +1493,8 @@
         "description": "this is theme footer widget"
       }
     ],
-    "version": "2.10",
-    "wabVersion": "2.10",
+    "version": "2.11",
+    "wabVersion": "2.11",
     "author": "Esri R&D Center Beijing",
     "description": "",
     "copyright": "",
@@ -1691,8 +1691,8 @@
         "description": "this is layout1"
       }
     ],
-    "version": "2.10",
-    "wabVersion": "2.10",
+    "version": "2.11",
+    "wabVersion": "2.11",
     "author": "Esri Inc",
     "description": "Pocket Theme",
     "copyright": "Copyright 2015 Esri Inc.",
@@ -1702,6 +1702,7 @@
       "defaultLabel": "Pocket Theme",
       "ar": "نسق Pocket",
       "bs": "Džepna tema",
+      "ca": "Tema Butxaca",
       "cs": "Kapesní motiv",
       "da": "Pocket-tema",
       "de": "Pocket-Design",
@@ -1713,6 +1714,7 @@
       "he": "ערכת נושא 'כיס'",
       "hi": "पॉकेट थीम",
       "hr": "Džepna tema",
+      "hu": "Pocket téma",
       "it": "Tema Pocket",
       "id": "Tema Saku",
       "ja": "ポケット テーマ",
@@ -1740,6 +1742,7 @@
       "defaultLabel": "Default layout",
       "ar": "تخطيط افتراضي",
       "bs": "Zadani izgled",
+      "ca": "Disseny per defecte",
       "cs": "Výchozí rozvržení",
       "da": "Standardlayout",
       "de": "Standard-Layout",
@@ -1751,6 +1754,7 @@
       "he": "פריסת ברירת מחדל",
       "hi": "डिफ़ॉल्ट रूपरेखा",
       "hr": "Zadani izgled",
+      "hu": "Alapértelmezett elrendezés",
       "it": "Layout predefinito",
       "id": "Tata letak default",
       "ja": "デフォルトのレイアウト",
@@ -1778,6 +1782,7 @@
       "defaultLabel": "Layout 1",
       "ar": "تخطيط 1",
       "bs": "Izgled 1",
+      "ca": "Disseny 1",
       "cs": "Rozvržení 1",
       "da": "Layout 1",
       "de": "Layout 1",
@@ -1789,6 +1794,7 @@
       "he": "פריסה 1",
       "hi": "रूपरेखा 1",
       "hr": "Izgled 1",
+      "hu": "1. elrendezés",
       "it": "Layout 1",
       "id": "Tata Letak 1",
       "ja": "レイアウト 1",
